@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31F594823F44D1000152888 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F594723F44D1000152888 /* CardBehavior.swift */; };
+		D349DE9123E98CCF003A5902 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349DE9023E98CCF003A5902 /* PlayingCardView.swift */; };
 		D3D96FE323E857D6001FB58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D96FE223E857D6001FB58E /* AppDelegate.swift */; };
 		D3D96FE523E857D6001FB58E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D96FE423E857D6001FB58E /* SceneDelegate.swift */; };
 		D3D96FE723E857D6001FB58E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D96FE623E857D6001FB58E /* ViewController.swift */; };
 		D3D96FEA23E857D6001FB58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D96FE823E857D6001FB58E /* Main.storyboard */; };
 		D3D96FEC23E857DF001FB58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D96FEB23E857DF001FB58E /* Assets.xcassets */; };
 		D3D96FEF23E857DF001FB58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D96FED23E857DF001FB58E /* LaunchScreen.storyboard */; };
+		D3D96FFA23E85885001FB58E /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D96FF923E85885001FB58E /* PlayingCard.swift */; };
+		D3D96FFC23E864C8001FB58E /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D96FFB23E864C8001FB58E /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D31F594723F44D1000152888 /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
+		D349DE9023E98CCF003A5902 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 		D3D96FDF23E857D5001FB58E /* PlayingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D96FE223E857D6001FB58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D96FE423E857D6001FB58E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		D3D96FEB23E857DF001FB58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3D96FEE23E857DF001FB58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D96FF023E857DF001FB58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D96FF923E85885001FB58E /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		D3D96FFB23E864C8001FB58E /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		D3D96FE123E857D5001FB58E /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				D3D96FE223E857D6001FB58E /* AppDelegate.swift */,
-				D3D96FE423E857D6001FB58E /* SceneDelegate.swift */,
-				D3D96FE623E857D6001FB58E /* ViewController.swift */,
-				D3D96FE823E857D6001FB58E /* Main.storyboard */,
-				D3D96FEB23E857DF001FB58E /* Assets.xcassets */,
-				D3D96FED23E857DF001FB58E /* LaunchScreen.storyboard */,
+				D3D96FF823E85871001FB58E /* Model */,
+				D3D96FF723E8581A001FB58E /* Presenter */,
 				D3D96FF023E857DF001FB58E /* Info.plist */,
+				D3D96FF623E8580C001FB58E /* Support */,
 			);
 			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		D3D96FF623E8580C001FB58E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D3D96FE223E857D6001FB58E /* AppDelegate.swift */,
+				D3D96FEB23E857DF001FB58E /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D3D96FF723E8581A001FB58E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D349DE9023E98CCF003A5902 /* PlayingCardView.swift */,
+				D3D96FE623E857D6001FB58E /* ViewController.swift */,
+				D3D96FE823E857D6001FB58E /* Main.storyboard */,
+				D3D96FE423E857D6001FB58E /* SceneDelegate.swift */,
+				D3D96FED23E857DF001FB58E /* LaunchScreen.storyboard */,
+				D31F594723F44D1000152888 /* CardBehavior.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D3D96FF823E85871001FB58E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3D96FF923E85885001FB58E /* PlayingCard.swift */,
+				D3D96FFB23E864C8001FB58E /* PlayingCardDeck.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D96FE723E857D6001FB58E /* ViewController.swift in Sources */,
+				D349DE9123E98CCF003A5902 /* PlayingCardView.swift in Sources */,
 				D3D96FE323E857D6001FB58E /* AppDelegate.swift in Sources */,
+				D3D96FFC23E864C8001FB58E /* PlayingCardDeck.swift in Sources */,
+				D3D96FFA23E85885001FB58E /* PlayingCard.swift in Sources */,
 				D3D96FE523E857D6001FB58E /* SceneDelegate.swift in Sources */,
+				D31F594823F44D1000152888 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
